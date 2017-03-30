@@ -8,13 +8,13 @@ services:
 
   ldap:
     image: sumitg/knox-mten
-    command: /ldap.sh
+    command: /knox/bin/ldap.sh
 
   knox:
     image: sumitg/knox-mten
     ports:
     - "8443:8443"
-    command: /gateway.sh
+    command: /knox/bin/gateway.sh
     volumes:
      - ./logs:/knox/logs
     depends_on:
