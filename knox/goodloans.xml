@@ -38,7 +38,7 @@
     </gateway>
     <service>
         <role>LOANS</role>
-        <url>http://www.goodloans.com:8080</url>
+        <url>http://loans-app:8080</url>
     </service>
     <service>
         <role>WEBHDFS</role>
